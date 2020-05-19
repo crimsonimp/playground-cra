@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/playground-cra/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/playground-cra/static/js/main.075ff8b5.chunk.js",
+    "main.js.map": "/playground-cra/static/js/main.075ff8b5.chunk.js.map",
+    "runtime-main.js": "/playground-cra/static/js/runtime-main.f27dc6a8.js",
+    "runtime-main.js.map": "/playground-cra/static/js/runtime-main.f27dc6a8.js.map",
+    "static/js/2.480992be.chunk.js": "/playground-cra/static/js/2.480992be.chunk.js",
+    "static/js/2.480992be.chunk.js.map": "/playground-cra/static/js/2.480992be.chunk.js.map",
+    "index.html": "/playground-cra/index.html",
+    "precache-manifest.302563d73559b4e8462616ed2d3052f3.js": "/playground-cra/precache-manifest.302563d73559b4e8462616ed2d3052f3.js",
+    "service-worker.js": "/playground-cra/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/playground-cra/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.480992be.chunk.js.LICENSE.txt": "/playground-cra/static/js/2.480992be.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f27dc6a8.js",
+    "static/js/2.480992be.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.075ff8b5.chunk.js"
+  ]
+}
