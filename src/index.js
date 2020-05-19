@@ -6,13 +6,13 @@ import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 
+console.log(document.getElementById('root'));
+
+// React.StrictMode
 ReactDOM.render(
-  // React.StrictMode
-  <>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 
