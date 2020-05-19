@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
-import AppHeader from '../../components/Header';
+import AppHeader from '../../components/AppHeader';
 import AppList from '../../components/AppList';
 
 const Home = () => {
