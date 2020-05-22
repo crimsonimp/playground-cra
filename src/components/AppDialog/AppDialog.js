@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { forwardRef } from "react";
 import {
   Slide,
   Dialog,
@@ -9,20 +8,16 @@ import {
 } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 
-const DialogTransition = React.forwardRef(function Transition(props, ref) {
+const DialogTransition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const AppListDialog = ({ open = false, title, children, handler }) => {
-  const handleToggle = () => {
-    handler(!open);
-  };
-
+const AppDialog = ({ open = true, title, children, handler = () => {} }) => {
   return (
     <Dialog
       open={open}
       TransitionComponent={DialogTransition}
-      onClose={handleToggle}
+      onClose={() => handler(!open)}
       fullWidth={true}
       maxWidth="sm"
     >
@@ -31,8 +26,9 @@ const AppListDialog = ({ open = false, title, children, handler }) => {
         <IconButton
           edge="end"
           aria-label="close"
-          onClick={handleToggle}
+          onClick={() => handler(!open)}
           style={{ float: "right" }}
+          size="small"
         >
           <Close />
         </IconButton>
@@ -45,4 +41,4 @@ const AppListDialog = ({ open = false, title, children, handler }) => {
   );
 };
 
-export default AppListDialog;
+export default AppDialog;

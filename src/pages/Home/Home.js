@@ -8,7 +8,7 @@ import AppList from '../../components/AppList';
 const Home = () => {
   return (
     <>
-      <AppHeader title="Playground Create React App" />
+      <AppHeader title="Welcome" />
 
       <Container>
         <Grid container spacing={1}>

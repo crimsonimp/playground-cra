@@ -1,26 +1,34 @@
 import { createStore } from "redux";
 
-const INITIAL_STATE = sessionStorage.getItem('list') ? JSON.parse(sessionStorage.getItem('list')) : [];
+const storage = sessionStorage.getItem("storage");
 
-const appState = (state = INITIAL_STATE, { type, payload }) => {
-  switch(type) {
-    case 'ADD':
-      // payload === { id: 0, name: '..' };
-      const addState = state.filter(item => item.id !== payload.id);
-      state = [...addState, payload];
-      sessionStorage.setItem('list', JSON.stringify(state));
-      return state;
-    case "REMOVE":
-      // payload === { id: 0, name: '..' };
-      const removeState = state.filter(item => item.id !== payload.id);
-      state = removeState;
-      sessionStorage.setItem('list', JSON.stringify(state));
-      return state;
+const INITIAL_STATE = (storage && JSON.parse(storage)) || [];
+
+const reducer = (state = INITIAL_STATE, { type, data }) => {
+  switch (type) {
+    case "SET_ITEM":
+      if (state.some((i) => i.id === data.id)) {
+        sessionStorage.setItem(
+          "storage",
+          JSON.stringify(
+            state.map((i) => (i.id === data.id ? { ...i, ...data } : i))
+          )
+        );
+        return state.map((i) => (i.id === data.id ? { ...i, ...data } : i));
+      }
+      sessionStorage.setItem("storage", JSON.stringify([...state, data]));
+      return [...state, data];
+    case "REMOVE_ITEM":
+      sessionStorage.setItem(
+        "storage",
+        JSON.stringify(state.filter((i) => i.id !== data.id))
+      );
+      return state.filter((i) => i.id !== data.id);
     default:
       return state;
   }
 };
 
-const store = createStore(appState);
+const store = createStore(reducer);
 
 export default store;
