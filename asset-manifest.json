@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/playground-cra/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/playground-cra/static/js/main.923edf5a.chunk.js",
-    "main.js.map": "/playground-cra/static/js/main.923edf5a.chunk.js.map",
+    "main.js": "/playground-cra/static/js/main.c2e6ecd6.chunk.js",
+    "main.js.map": "/playground-cra/static/js/main.c2e6ecd6.chunk.js.map",
     "runtime-main.js": "/playground-cra/static/js/runtime-main.f27dc6a8.js",
     "runtime-main.js.map": "/playground-cra/static/js/runtime-main.f27dc6a8.js.map",
     "static/js/2.b90ad7ea.chunk.js": "/playground-cra/static/js/2.b90ad7ea.chunk.js",
     "static/js/2.b90ad7ea.chunk.js.map": "/playground-cra/static/js/2.b90ad7ea.chunk.js.map",
     "index.html": "/playground-cra/index.html",
-    "precache-manifest.15396b10ef671fa10badf3f1eb2b8707.js": "/playground-cra/precache-manifest.15396b10ef671fa10badf3f1eb2b8707.js",
+    "precache-manifest.278f475575f833859a9b1f0233475523.js": "/playground-cra/precache-manifest.278f475575f833859a9b1f0233475523.js",
     "service-worker.js": "/playground-cra/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/playground-cra/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.b90ad7ea.chunk.js.LICENSE.txt": "/playground-cra/static/js/2.b90ad7ea.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f27dc6a8.js",
     "static/js/2.b90ad7ea.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.923edf5a.chunk.js"
+    "static/js/main.c2e6ecd6.chunk.js"
   ]
 }
